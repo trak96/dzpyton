@@ -9,11 +9,9 @@ b = int(input("Введите шаг: "))
 n = int(input("Введите количество элементов: "))
 
 list1 = []
-for i in range(n):
-# while n > 0:
-    an = a + i * b
-    # n -= 1
+while n > 0:
+    an = a + (n-1) * b
+    n -= 1
     list1.append(an)
-# list1.reverse()
+list1.reverse()
 print(list1)
-
